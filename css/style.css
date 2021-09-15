@@ -1,0 +1,188 @@
+body {
+    color: white;
+    background-image: -webkit-gradient( linear, left top, left bottom, from(#000000), to(#04619f));
+    background-image: -o-linear-gradient( #000000, #04619f);
+    background-image: linear-gradient( #000000, #04619f);
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #ccc;
+    font-weight: bold;
+}
+
+p {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0;
+    /* uncomment for diff look (also uncomment in .active and comment the above line)
+     transform: scale(0); */
+}
+
+#author {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+}
+
+.parent {
+    height: 100vh;
+}
+
+.btn-custom {
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    bottom: 20%;
+    padding: .5rem 1.5rem !important;
+}
+
+.top-fix {
+    top: 10%;
+}
+
+.child {
+    height: 90vh;
+    background-image: -webkit-gradient( linear, left top, left bottom, from(#04619f), to(#000000));
+    background-image: -o-linear-gradient( #04619f, #000000);
+    background-image: linear-gradient( #04619f, #000000);
+}
+
+a {
+    height: 3rem;
+    padding-right: 1.5rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    line-height: 24px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    color: #1DA1F2;
+    bottom: .9375rem;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    text-decoration: none;
+    background-color: #f3f7fa;
+    -webkit-transition: .5s background-color;
+    -o-transition: .5s background-color;
+    transition: .5s background-color;
+}
+
+a span {
+    font-family: Helvetica Neue LT, Helvetica Neue, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: .0075rem;
+    margin-left: .5rem;
+    color: black;
+}
+
+a:hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+a:hover span {
+    color: white;
+}
+
+.active {
+    -webkit-transition: 1s opacity;
+    -o-transition: 1s opacity;
+    transition: 1s opacity;
+    opacity: 1;
+    /* for a different look uncomment the following lines and comment the above lines
+    transition: 1s transform;
+    transform: scale(1); */
+}
+
+.fixedheight {
+    padding: 10px;
+}
+
+.pulse:hover,
+.pulse:focus {
+    -webkit-animation: pulse 1s 0.2s infinite;
+    animation: pulse 1s 0.2s infinite;
+    -webkit-box-shadow: 0 0 0 32px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 32px rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 #04619f;
+        box-shadow: 0 0 0 0 #04619f;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 #04619f;
+        box-shadow: 0 0 0 0 #04619f;
+    }
+}
+
+#author:before {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    content: "- ";
+}
+
+@media screen and (max-width:1068px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+    #quote {
+        font-size: 1.5rem;
+    }
+    #author {
+        font-size: 1.3rem;
+    }
+    button.btn-custom {
+        font-size: 1.2rem;
+        padding: .75rem 2.25rem !important;
+    }
+    .fa-twitter-square {
+        font-size: 2rem;
+    }
+    .pulse:hover,
+    .pulse:focus {
+        -webkit-animation: pulse 1s 0.2s infinite;
+        animation: pulse 1s 0.2s infinite;
+        -webkit-box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
+    }
+}
+
+@media screen and (max-width:499px) {
+    h1 {
+        font-size: 3rem;
+    }
+    #quote {
+        font-size: 1rem;
+    }
+    #author {
+        font-size: 1rem;
+    }
+    button.btn-custom {
+        font-size: 0.8rem;
+        padding: .5rem 1.5rem !important;
+    }
+    a {
+        height: 1.35rem;
+        padding-right: .75rem;
+        padding-left: 0.5rem;
+        font-size: .75rem;
+        line-height: .75rem;
+    }
+    a span {
+        font-size: .75rem;
+    }
+}

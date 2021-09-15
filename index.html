@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="parent w-100 d-flex justify-content-center">
+        <div class="text-center d-flex justify-content-center align-items-center flex-column align-self-center w-75 child position-relative">
+            <h1 class="mb-5 position-absolute top-fix">Quote of the Day</h1>
+            <div class="fixedheight w-100">
+                <p class="mt-1" id="quote"></p>
+                <p class="mt-2 mb-5" id="author"></p>
+            </div>
+            <button class="btn bg-info btn-custom pulse position-absolute" id="quoteBtn">Generate Quote</button>
+            <a href="" id="tweetBtn" target="_blank" class="position-absolute"><i class="fab fa-twitter"></i><span>Tweet</span></a>
+        </div>
+    </div>
+
+    <script src=" ./js/bootstrap.bundle.js "></script>
+    <script src="./js/script.js "></script>
+</body>
+
+</html>
