@@ -1,5 +1,4 @@
 body {
-    height: 100vh;
     width: 100%;
     color: white;
     background-image: -webkit-gradient( linear, left top, left bottom, from(#000000), to(#04619f));
@@ -39,10 +38,14 @@ p {
 }
 
 .child {
-    height: 90vh;
+    height: 90%;
     background-image: -webkit-gradient( linear, left top, left bottom, from(#04619f), to(#000000));
     background-image: -o-linear-gradient( #04619f, #000000);
     background-image: linear-gradient( #04619f, #000000);
+}
+
+.parent {
+    height: 100vh;
 }
 
 a {
