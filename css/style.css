@@ -1,4 +1,5 @@
 body {
+    height: 100vh;
     color: white;
     background-image: -webkit-gradient( linear, left top, left bottom, from(#000000), to(#04619f));
     background-image: -o-linear-gradient( #000000, #04619f);
