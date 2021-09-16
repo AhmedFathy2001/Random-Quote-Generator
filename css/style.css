@@ -27,10 +27,6 @@ p {
     font-size: 1.6rem;
 }
 
-.parent {
-    height: 100vh;
-}
-
 .btn-custom {
     font-size: 2rem;
     font-family: 'Lobster', cursive;
