@@ -9,7 +9,7 @@ let allQuotes
 
 const getNewQuote = async() => {
         //api for quotes
-        let url = "https://type.fit/api/quotes"
+        let url = "https://mocki.io/v1/b9b2b14f-f9e5-4c31-98cf-f50990a6bf84"
             // fetch the data from api
         const response = await fetch(url)
             // make the quotes json format
